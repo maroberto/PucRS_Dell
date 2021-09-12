@@ -5,13 +5,13 @@ Solução de Problema: Internações em Porto Alegre
 
 ## Instruções para executar o codigo
 
-O codigo foi escrito na linguagem Python na versão [python3](https://www.python.org/) e para ler e tratar o arquivo CSV, utilizei a biblioteca [Pandas](https://pandas.pydata.org/) através do [Anaconda](https://www.anaconda.com/).
+O codigo foi escrito na linguagem Python na versão [python3](https://www.python.org/), para ler e tratar o arquivo CSV, utilizei a biblioteca [Pandas](https://pandas.pydata.org/) através do [Anaconda](https://www.anaconda.com/).
 
-A execução do programa será via terminal, conforme opção contida contida nas instruções.
+A execução do programa será via terminal, conforme opção contida nas instruções.
 
 ## Iniciando o sistema 
 
-Este comando importa a biblioteca usada
+Este comando importa a biblioteca pandas
 
 ```python
 import pandas as pd
@@ -67,7 +67,7 @@ if op == 1:
                 + bcolors.CEND
 ```
 
-Após a verificação o sistema filtra e organiza os dados para serem exibidos ao usuário.
+Após a verificação, o sistema filtra e organiza os dados para serem exibidos ao usuário.
 
 ```python
 else:
@@ -115,7 +115,7 @@ Saida deste bloco:
 
 ### 2. Consultar internações por ano
 
-No inicio do segundo bloco refazemos as verificações para validar as entradas de usuário, logo depois convertermos e filtramos os anos escolhidos e geramos a saida para o usuário.
+No inicio do segundo bloco refazemos as verificações para validar as entradas de usuário, logo depois convertermos as datas, filtramos os anos escolhidos e geramos a saida para o usuário.
 
 ```python
 if op == 2:
@@ -169,7 +169,7 @@ Esta é a saida deste bloco, nesta imagem é possível visualizar o alerta de en
 
 ### 3. Consultar hospitais
 
-Neste bloco fizemos novamente a vailidação e em seguida preparamos a tabela que onde será exibido os dados filtrados
+Neste bloco fizemos novamente a validação e em seguida preparamos a tabela,  onde será exibido os dados filtrados
 
 ```python
 if op == 3:
@@ -241,7 +241,7 @@ if op == 3:
             print(filter_executante_df.head())
 ```
 
-O resultado deste bloco é a tabela abaixo, onde podemos visualizar a busca com a função *Contains*, que permite filtrar por parte do nome. Para otimizar a execução, foram exibidos apenas 5 linhas, porem o total é de 2603 linhas, nesta busca do Hospital Femina3
+O resultado deste bloco é a tabela abaixo, onde podemos visualizar a busca com usando a função **Contains**, que permite filtrar, por parte do nome. Para otimizar a execução, foram exibidos apenas 5 linhas, porem o total é de 2603 linhas. Neste exemplo, o executante é Hopsital Femina.
 
 ![Menu](src/images/exe.png)
 
@@ -249,7 +249,7 @@ O resultado deste bloco é a tabela abaixo, onde podemos visualizar a busca com 
 
 ### 4. Calcular tempo de internação
 
-Aqui repetimos a validação e convertemos as datas para fazer o calculo de tempo de internação
+Aqui repetimos a validação, as datas são convertidas para fazer o calculo de tempo de internação
 
 ```python
 if op == 4:
@@ -304,13 +304,13 @@ if op == 4:
                 print(tempo_df)
 ```
 
-Mais uma vez testamos a entrada invalida, e após a correção, os dados referente aos dias de internação são exibidos   
+Mais uma vez testamos se a entrada é invalida, e após a correção, os dados referente, aos dias de internação são exibidos   
 
 ![Menu](src/images/inter.png)
 
 ### 5. Determinar tempos de espera na fila
 
-Neste último bloco, calculamos e filtramos o dias de internação, como neste ponto não temos entrada de usuario, apenas exibimos os dados do dataframe geral
+Neste último bloco, calculamos os dias de internação, como neste ponto não temos entrada de usuario, apenas exibimos os dados do dataframe geral
 
 ```python
 if op == 5:
@@ -339,7 +339,7 @@ if op == 5:
         )
 ```
 
-Aqui é exibido as cinco internações mais logas
+Aqui é exibido as cinco internações mais longas
 
 ![Menu](src/images/days.png)
 
@@ -355,9 +355,9 @@ aqui temos um simples print("fim") para sair do programa.
 
 #### Agradecimentos
 
-Gostaria de manifestar a minha satisfação em participar deste processo seletivo, e apesar de não ter recursos avançados, foi um grande desafio executar essa tarefa.
+Gostaria de manifestar a minha satisfação em participar deste processo seletivo, e como estudante em busca de oportinidades, foi um grande desafio executar esta tarefa.
 
-Muito Obrigado, PucRS/Dell e todos os envolvidos por essa oportunidade.  
+Muito Obrigado, PucRS/Dell e todos os envolvidos neste processo.  
 
 ##### contatos:
 
