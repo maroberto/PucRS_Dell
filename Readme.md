@@ -115,7 +115,7 @@ Saida deste bloco:
 
 ### 2. Consultar internações por ano
 
-No inicio do segundo bloco refazemos as verificações para validar as entradas de usuário, logo depois convertermos as datas, filtramos os anos escolhidos e geramos a saida para o usuário.
+No inicio do segundo bloco refazemos as verificações para validar as entradas de usuário, logo depois convertemos as datas, filtramos os anos escolhidos e geramos a saida para o usuário.
 
 ```python
 if op == 2:
@@ -241,7 +241,7 @@ if op == 3:
             print(filter_executante_df.head())
 ```
 
-O resultado deste bloco é a tabela abaixo, onde podemos visualizar a busca com usando a função **Contains**, que permite filtrar, por parte do nome. Para otimizar a execução, foram exibidos apenas 5 linhas, porem o total é de 2603 linhas. Neste exemplo, o executante é Hopsital Femina.
+O resultado deste bloco é a tabela abaixo, onde podemos visualizar a busca usando a função **Contains**, que permite filtrar, por parte do nome. Para otimizar a execução, foram exibidos apenas 5 linhas, porem o total é de 2603 linhas. Neste exemplo, o executante é Hopsital Femina.
 
 ![Menu](src/images/exe.png)
 
@@ -304,13 +304,13 @@ if op == 4:
                 print(tempo_df)
 ```
 
-Mais uma vez testamos se a entrada é invalida, e após a correção, os dados referente, aos dias de internação são exibidos   
+Mais uma vez testamos se a entrada é valida, e após a correção, os dados referente, aos dias de internação são exibidos   
 
 ![Menu](src/images/inter.png)
 
-### 5. Determinar tempos de espera na fila
+### 5. Determinar tempo de espera na fila
 
-Neste último bloco, calculamos os dias de internação, como neste ponto não temos entrada de usuario, apenas exibimos os dados do dataframe geral
+Neste último bloco, calculamos o tempo de espera na fila, como neste ponto não temos entrada de usuario, apenas exibimos os dados do dataframe geral
 
 ```python
 if op == 5:
@@ -339,7 +339,7 @@ if op == 5:
         )
 ```
 
-Aqui é exibido as cinco internações mais longas
+Aqui é exibido os cinco maiores tempos de espera, porem a busca é feita pelo dadaframe geral, pode ocorrer divergencias com que se espera na saida. para chegar a uma busca mais realista, podemos filtrar pelo ano do inicio da pandemia, por exemplo. 
 
 ![Menu](src/images/days.png)
 
@@ -355,7 +355,7 @@ aqui temos um simples print("fim") para sair do programa.
 
 #### Agradecimentos
 
-Gostaria de manifestar a minha satisfação em participar deste processo seletivo, e como estudante em busca de oportinidades, foi um grande desafio executar esta tarefa.
+Gostaria de manifestar a minha satisfação em participar deste processo seletivo, e como estudante em busca de oportunidades, foi um grande desafio executar esta tarefa.
 
 Muito Obrigado, PucRS/Dell e todos os envolvidos neste processo.  
 
